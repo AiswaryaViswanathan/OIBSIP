@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internet Programming</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css">
+</head> 
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png" alt=""></a>
+            <div class="nav-link" id="navlink">
+                <i class="fa fa-times" onclick="closemenu()"></i>
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="#about">ABOUT US</a></li>
+                    <li><a href="">SERVICES</a></li>
+                    <li><a href="">BLOG</a></li>
+                    <li><a href="">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>Your Life's Work, Powered By Our Life's Work</h1>
+            <p>Unique and powerful suite of software to run your entire business, brought to you by a company with the long term vision to transform the way you work.</p>
+            <a href="" class="main-btn"     >JOIN US</a>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <h1 class="abtheader">ABOUT<span> US</span></h1>
+        <div class="row">
+            <div class="aboutimg">
+                <img src="images/aboutimg.jpg" alt="oops!....">
+            </div>
+            <div class="aboutcontent">
+                <h3>What Makes Our Application More Effective..?</h3> 
+                <p>SP Technologies is an IT services, Digital and Business solutions company based in Chennai 
+                    providing Customized Software Development, Web Application Development, Mobile Application Development 
+                    and IT Consulting Services. We have earned the pride of being one of the leading desktop & web based software 
+                    solution provider in India, we develop software solution that helps our customers to outperform the competition and 
+                    stay ahead in today's competitive business environment. 
+                    We firmly believe that business needs can be only met when technology is in sync with business process.</p>   
+                <a href="#" class="btn">Learn More</a>
+            </div>
+        </div>
+    </section>
+     
+    <script>
+        var navlink = document.getElementById("navlink");
+        function openmenu(){
+            navlink.style.right="0";
+        }
+        function closemenu(){
+            navlink.style.right="-200px";
+        }
+    </script>
+</body>
+</html>
